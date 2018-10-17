@@ -4,13 +4,13 @@
         <attribute name="name" attributeType="String" syncable="YES"/>
         <relationship name="items" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Items" inverseName="parentCategory" inverseEntity="Items" syncable="YES"/>
     </entity>
-    <entity name="Items" representedClassName=".Items" syncable="YES" codeGenerationType="class">
+    <entity name="Items" representedClassName=".Items" syncable="YES">
         <attribute name="checkmarkStatus" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
         <attribute name="message" attributeType="String" syncable="YES"/>
         <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Categories" inverseName="items" inverseEntity="Categories" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Items" positionX="-63" positionY="-18" width="128" height="90"/>
         <element name="Categories" positionX="-322.515625" positionY="-17.9921875" width="128" height="75"/>
+        <element name="Items" positionX="-63" positionY="-18" width="128" height="90"/>
     </elements>
 </model>
